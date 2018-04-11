@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Соловьев](https://up.htmlacademy.ru/adaptive/14/user/509305).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Солодухин](https://up.htmlacademy.ru/adaptive/14/user/138404).
 
 ---
 
