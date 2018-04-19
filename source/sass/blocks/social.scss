@@ -1,0 +1,24 @@
+.social {
+  border-bottom: 1px solid var(--footer-border-color);
+}
+
+.social__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  width: 60px;
+  height: 63px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.social-icon {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,84 @@
+.additional__promo {
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.additional__title {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--grey-color-stat);
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 55px;
+    right: -20px;
+  }
+
+  &--small {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: none;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.additional__item {
+  border-bottom: 1px solid var(--grey-color-stat);
+}
+
+.additional__table {
+  width: 100%;
+  font-family: var(--set-Arial-font-family);
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.additional__table-cell {
+  &:nth-child(2) {
+    text-align: right;
+  }
+}
+
+.additional__btn {
+  margin-bottom: 20px;
+}
+
+.additional__text {
+  font-family: var(--set-Arial-font-family);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 170px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+}
+
+.additional__icon {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}

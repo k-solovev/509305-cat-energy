@@ -1,0 +1,117 @@
+.catalog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__info {
+  width: 140px;
+  margin-right: 0;
+}
+
+.catalog__link {
+  color: black;
+}
+
+.catalog__title {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    background-color: var(--grey-border-color);
+  }
+
+  &--small {
+    margin: 20px 0 0 3px;
+    width: 75px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &--show-more {
+    min-height: 100px;
+    padding-top: 55px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-bottom: none;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: var(--color-plus-icon);
+      position: absolute;
+      left: 42%;
+      top: 20%;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.catalog__text {
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: auto;
+  padding: 0;
+  font-family: var(--set-Arial-font-family);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__table {
+  font-family: var(--set-Arial-font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+}
+
+.catalog__table-cell {
+  &:nth-child(2) {
+    text-align: right;
+  }
+}
+
+.catalog__btn {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: var(--grey-border-color);
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+  }
+}
