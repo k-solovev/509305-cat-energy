@@ -1,0 +1,21 @@
+.slider__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__text {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.slider__scale {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+}

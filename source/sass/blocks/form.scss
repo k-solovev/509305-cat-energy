@@ -1,0 +1,62 @@
+.form {
+  width: 100%;
+}
+
+.form__title {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.form__text {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 230px;
+  margin-bottom: 40px;
+
+  &--footnote {
+    font-family: var(--set-Arial-font-family);
+    font-weight: 400;
+    line-height: 16px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: none;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  border-top: 1px solid var(--grey-border-color);
+  border-bottom: 1px solid var(--grey-border-color);
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 30px;
+
+  &--green-border {
+    border-top: 3px solid var(--green-color);
+    border-bottom: none;
+    padding-top: 45px;
+  }
+}
+
+.form__legend {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  width: 205px;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: white;
+  padding-left: 20px;
+  position: absolute;
+  left: 0;
+  top: -18px;
+}
+
+.form__item {
+  margin-bottom: 10px;
+}

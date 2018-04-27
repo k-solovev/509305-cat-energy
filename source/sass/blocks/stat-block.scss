@@ -1,0 +1,36 @@
+.stat-block {
+  background-color: var(--bgc-grey);
+  border: 1px solid var(--grey-color-stat);
+  width: 125px;
+  min-height: 55px;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
+}
+
+.stat-block__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.stat-block__text {
+  z-index: 1;
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  padding: 0 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 60px;
+  font-family: var(--set-Arial-font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: var(--bgc-grey);
+}

@@ -1,0 +1,24 @@
+.page-footer {
+  background-color: var(--bgc-grey);
+}
+
+.page-footer__wrapper {
+  text-align: center;
+}
+
+.page-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 85px;
+}
+
+.page-footer__link {
+  display: block;
+  color: var(--grey-color-link);
+  border-bottom: 1px solid var(--footer-border-color);
+
+  &--name {
+    border-bottom: none;
+  }
+}

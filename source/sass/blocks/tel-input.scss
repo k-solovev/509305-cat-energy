@@ -1,0 +1,27 @@
+.tel-input {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tel-input__label {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.tel-input__control {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  margin-left: 10px;
+  border: 1px solid var(--grey-border-color);
+}

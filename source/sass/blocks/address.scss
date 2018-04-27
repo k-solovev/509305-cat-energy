@@ -1,0 +1,23 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__title {
+  font-family: var(--set-Oswald-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 140px;
+  min-height: 65px;
+}
+
+.address__text {
+  font-family: var(--set-Arial-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+  min-height: 60px;
+}
