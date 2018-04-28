@@ -1,11 +1,12 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/normalize-scss/sass/_normalize.scss";
 @import "fonts";
 @import "variables";
 @import "global";
+@import "blocks/container";
+@import "blocks/btn";
 @import "blocks/page-header";
 @import "blocks/list";
 @import "blocks/promo";
-@import "blocks/btn";
 @import "blocks/offers";
 @import "blocks/offer";
 @import "blocks/features";
@@ -25,4 +26,6 @@
 @import "blocks/checkbox-input";
 @import "blocks/contacts";
 @import "blocks/catalog";
+@import "blocks/catalog-card";
 @import "blocks/additional";
+@import "blocks/additional-card";

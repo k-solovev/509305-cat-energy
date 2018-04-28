@@ -8,4 +8,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (--tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

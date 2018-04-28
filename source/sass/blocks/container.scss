@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (--tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (--desktop-width) {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}

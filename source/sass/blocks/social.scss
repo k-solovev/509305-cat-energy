@@ -1,5 +1,9 @@
 .social {
   border-bottom: 1px solid var(--footer-border-color);
+
+  @media (--tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .social__wrapper {

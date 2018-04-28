@@ -4,6 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (--desktop-width) {
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .text-input__label {
@@ -12,6 +20,17 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (--tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+  }
+
+  @media (--desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .text-input__control {
@@ -24,4 +43,9 @@
   width: 100%;
   margin-left: 10px;
   border: 1px solid var(--grey-border-color);
+
+  @media (--tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

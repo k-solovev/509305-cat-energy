@@ -10,47 +10,47 @@
 
 <body class="form-page">
   <header class="page-header container">
-      <div class="page-header__logo logo">
-        <a class="logo__link" href="index.html">
-          <img src="img/logo-mobile.svg" class="logo__img" width="200" height="45" alt="Логотип Кэт Энерджи">
-        </a>
-      </div>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle btn btn--toggle" type="button"></button>
-        <ul class="main-nav__list list list--hidden">
-          <li class="list__item">
-            <a class="list__link">Главная</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/logo-mobile.svg" class="logo__img" width="200" height="45" alt="Логотип Кэт Энерджи">
+      </a>
+    </div>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle btn btn--toggle" type="button"></button>
+      <ul class="main-nav__list list list--hidden">
+        <li class="list__item">
+          <a class="list__link" href="index.html">Главная</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link list__link--active">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
-    <form class="form" action="#" method="post">
-      <div class="container">
+    <form class="form container" action="#" method="post">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету и&nbsp;мы&nbsp;подберем программу питания для вашего кота</p>
-        <div class="form__item text-input">
-          <label class="text-input__label" for="name">Имя:*</label>
-          <input class="text-input__control" type="text" name="name" id="name" placeholder="Барсик" required>
-        </div>
-        <div class="form__item text-input">
-          <label class="text-input__label" for="weight">Вес(кг)*:</label>
-          <input class="text-input__control" type="text" name="weight" id="weight" placeholder="7" required>
-        </div>
-        <div class="form__item text-input">
-          <label class="text-input__label" for="age">Возраст(лет):</label>
-          <input class="text-input__control" type="text" name="age" id="age" placeholder="7">
-        </div>
-      </div>
-      <fieldset class="form__fieldset">
-        <div class="container">
+      <div class="form__wrapper">
+        <fieldset class="form__fieldset form__fieldset--text">
+          <div class="form__item text-input">
+            <label class="text-input__label" for="name">Имя:*</label>
+            <input class="text-input__control" type="text" name="name" id="name" placeholder="Барсик" required>
+          </div>
+          <div class="form__item text-input">
+            <label class="text-input__label" for="weight">Вес (кг)*:</label>
+            <input class="text-input__control" type="text" name="weight" id="weight" placeholder="7" required>
+          </div>
+          <div class="form__item text-input">
+            <label class="text-input__label" for="age">Возраст (лет):</label>
+            <input class="text-input__control" type="text" name="age" id="age" placeholder="7">
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--grey-border">
           <div class="form__item radio-input">
             <input class="radio-input__control" type="radio" name="program" id="slim">
             <label class="radio-input__label" for="slim">Похудение</label>
@@ -63,11 +63,11 @@
             <input class="radio-input__control" type="radio" name="program" id="advice">
             <label class="radio-input__label" for="advice">Не&nbsp;знаю (нужен ваш совет)</label>
           </div>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--green-border">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <div class="container">
+        </fieldset>
+      </div>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <div class="form__wrapper">
           <div class="form__item email-input">
             <label class="email-input__label" for="email">E-mail:*</label>
             <input class="email-input__control" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -78,17 +78,15 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--green-border">
-          <legend class="form__legend">Комментарий</legend>
-        <div class="container">
-          <div class="form__item textarea">
-            <textarea class="textarea__field" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+      <fieldset class="form__fieldset form__fieldset--textarea">
+        <legend class="form__legend">Комментарий</legend>
+        <div class="form__item textarea">
+          <textarea class="textarea__field" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--green-border">
+      <fieldset class="form__fieldset form__fieldset--additional">
         <legend class="form__legend">Дополнительно</legend>
-        <div class="container">
+        <div class="form__wrapper">
           <div class="form__item checkbox-input">
             <input class="checkbox-input__control" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="checkbox-input__label" for="sweetener">Сахарозаменитель</label>
@@ -107,9 +105,9 @@
           </div>
         </div>
       </fieldset>
-      <div class="container">
-        <input class="btn  btn--green" type="submit" name="submit" id="submit" value="Отправить заявку">
-        <p class="form__text form__text--footnote">*-Обязательные поля</p>
+      <div class="form__wrapper">
+        <input class="btn  btn--green btn--form" type="submit" name="submit" id="submit" value="Отправить заявку">
+        <p class="form__text form__text--footnote">*—Обязательные поля</p>
       </div>
     </form>
 
@@ -117,7 +115,10 @@
       <div class="container">
         <div class="contacts__address address">
           <h3 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="address__block">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__text">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__minimap minimap">
@@ -129,7 +130,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__link" href="index.html">
-        <svg version="1.1" width="150px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg version="1.1" width="140px" height="90px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
           <style type="text/css">
             .st0 {
@@ -189,7 +190,7 @@
               x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
               <style type="text/css">
                 .st0 {
-                  fill: #231F20;
+                  fill: #231f20;
                 }
 
               </style>

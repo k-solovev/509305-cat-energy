@@ -1,10 +1,19 @@
 .offer {
   background-color: var(--bgc-grey);
+
+  @media (--desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .offer__wrapper {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
+
+  @media (--tablet-width) {
+    margin-right: 55px;
+    margin-left: 55px;
+  }
 }
 
 .offer__item {
@@ -14,70 +23,197 @@
 .offer__title {
   &--mass,
   &--slim {
-    font-family: var(--set-Oswald-font-family);
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-left: 11px;
+
     font-weight: 400;
     font-size: 24px;
     line-height: 37px;
-    text-transform: uppercase;
+    font-family: var(--set-Oswald-font-family);
     text-align: center;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: relative;
+    text-transform: uppercase;
 
     &::before {
       content: "";
+      position: absolute;
+      top: 27px;
+      left: 2px;
+
       width: 50px;
       height: 50px;
-      border-radius: 50%;
-      position: absolute;
-      top: 30px;
-      left: 0;
+
       background-color: var(--green-color);
+      border-radius: 50%;
+
+      @media (--tablet-width) {
+        top: 100px;
+        left: 400px;
+
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (--desktop-width) {
+        top: 70px;
+        left: 0;
+
+        width: 100px;
+        height: 100px;
+      }
     }
 
     &::after {
       content: "";
+      position: absolute;
+      top: 37px;
+      left: -8px;
+
       width: 68px;
       height: 28px;
-      position: absolute;
-      top: 41px;
-      left: -8px;
+
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
+
+      @media (--tablet-width) {
+        top: 150px;
+        left: 365px;
+
+        width: 267px;
+        height: 113px;
+      }
+
+      @media (--desktop-width) {
+        top: 90px;
+        left: -20px;
+
+        width: 134px;
+        height: 56px;
+      }
+    }
+
+    @media (--tablet-width) {
+      padding-top: 100px;
+      padding-left: 0;
+
+      font-size: 36px;
+      text-align: left;
+    }
+
+    @media (--desktop-width) {
+      padding-bottom: 70px;
+
+      text-align: center;
+    }
+  }
+
+  &--mass {
+    padding-left: 38px;
+
+    @media (--tablet-width) {
+      padding-left: 0;
     }
   }
 
   &--slim {
     &::after {
+      top: 25px;
+      left: 10px;
+
       width: 35px;
       height: 49px;
-      top: 27px;
-      left: 7px;
+
       background-image: url("../img/icon-cat-slim.svg");
+
+      @media (--tablet-width) {
+        top: 90px;
+        left: 430px;
+
+        width: 143px;
+        height: 197px;
+      }
+
+      @media (--desktop-width) {
+        top: 65px;
+        left: 15px;
+
+        width: 70px;
+        height: 97px;
+      }
     }
   }
 }
 
 .offer__text {
-  font-family: var(--set-Arial-font-family);
+  margin-left: 0;
+  padding-bottom: 20px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 0;
-  padding-bottom: 20px;
+  font-family: var(--set-Arial-font-family);
+
   border-bottom: 1px solid var(--footer-border-color);
+
+  @media (--tablet-width) {
+    width: 340px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
 }
 
 .offer__link {
   display: inline-block;
-  vertical-align: middle;
-  padding: 20px 0;
   width: 100%;
-  font-family: var(--set-Oswald-font-family);
+  padding: 20px 0;
+
   font-weight: 400;
-  color: black;
   font-size: 16px;
   line-height: 16px;
+  font-family: var(--set-Oswald-font-family);
+  vertical-align: middle;
+  color: black;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--grey-color-link);
+    position: absolute;
+    top: 27px;
+    left: 97px;
+
+    @media (--tablet-width) {
+      top: 29px;
+      left: 115px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 114px;
+    border: 6px solid var(--bgc-grey);
+    border-left-color: var(--grey-color-link);
+
+    @media (--tablet-width) {
+      top: 25px;
+      left: 134px;
+    }
+  }
+
+  @media (--tablet-width) {
+    padding-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -11,4 +11,7 @@
 
   --set-Oswald-font-family: "Oswald", "Arial", sans-serif;
   --set-Arial-font-family: "Arial", sans-serif;
+
+  @custom-media --tablet-width (min-width: 768px);
+  @custom-media --desktop-width (min-width: 1300px);
 }
