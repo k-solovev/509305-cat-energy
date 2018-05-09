@@ -8,4 +8,8 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 10px;
+
+  @media (--tablet-width) {
+    min-height: 175px;
+  }
 }

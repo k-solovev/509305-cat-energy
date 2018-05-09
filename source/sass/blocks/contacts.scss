@@ -1,5 +1,17 @@
 .contacts {
+  position: relative;
+
   &--grey-bg {
     background-color: var(--bgc-grey);
+  }
+}
+
+.contacts__address {
+  padding-top: 13px;
+  padding-bottom: 4px;
+
+  @media (--tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

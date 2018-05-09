@@ -4,13 +4,19 @@
 
 .page-footer__wrapper {
   text-align: center;
+
+  @media (--tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 85px;
+  min-height: 80px;
 }
 
 .page-footer__link {
@@ -19,6 +25,13 @@
   border-bottom: 1px solid var(--footer-border-color);
 
   &--name {
+    border-bottom: none;
+    font-family: var(--set-Arial-font-family);
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (--tablet-width) {
     border-bottom: none;
   }
 }

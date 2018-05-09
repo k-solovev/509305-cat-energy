@@ -1,3 +1,9 @@
+.slider {
+  @media (--tablet-width) {
+    background-color: var(--bgc-grey);
+  }
+}
+
 .slider__wrapper {
   width: 100%;
   display: flex;
@@ -17,5 +23,13 @@
 .slider__scale {
   display: inline-block;
   vertical-align: middle;
-  width: 80px;
+  width: 115px;
+}
+
+.slider__img {
+  &--fat {
+    margin-bottom: 29px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 }

@@ -1,26 +1,44 @@
 .email-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   min-height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  @media (--desktop-width) {
+    width: 570px;
+  }
 }
 
 .email-input__label {
-  font-family: var(--set-Oswald-font-family);
+  margin-right: 10px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
+
+  @media (--tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .email-input__control {
-  font-family: var(--set-Oswald-font-family);
+  flex-grow: 1;
+  padding: 10px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
-  padding: 10px;
-  min-width: 200px;
+
   border: 1px solid var(--grey-border-color);
+
+  @media (--tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -6,10 +6,20 @@
   border-radius: 3px;
   text-align: center;
   position: relative;
+
+  @media (--tablet-width) {
+    background-color: white;
+    width: 162px;
+    min-height: 70px;
+  }
+
+  @media (--desktop-width) {
+    background-color: var(--bgc-grey);
+  }
 }
 
 .stat-block__title {
-  margin-top: 0;
+  margin-top: 2px;
   margin-bottom: 0;
   padding-top: 10px;
   font-family: var(--set-Oswald-font-family);
@@ -17,13 +27,18 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (--tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stat-block__text {
   z-index: 1;
   position: absolute;
-  bottom: -15px;
-  left: 20px;
+  bottom: -17px;
+  left: 24px;
   padding: 0 10px;
   margin-top: 0;
   margin-bottom: 0;
@@ -33,4 +48,18 @@
   font-size: 12px;
   line-height: 12px;
   background-color: var(--bgc-grey);
+
+  @media (--tablet-width) {
+    background-color: white;
+    font-size: 14px;
+    line-height: 14px;
+    width: 148px;
+    bottom: -7px;
+    left: 7px;
+    padding: 0;
+  }
+
+  @media (--desktop-width) {
+    background-color: var(--bgc-grey);
+  }
 }

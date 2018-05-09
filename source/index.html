@@ -16,16 +16,16 @@
       </a>
     </div>
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle btn btn--toggle" type="button"></button>
+      <button class="btn btn--toggle" type="button"></button>
       <ul class="main-nav__list list list--hidden">
         <li class="list__item">
-          <a class="list__link">Главная</a>
+          <a class="list__link list__link--active list__link--index-page">Главная</a>
         </li>
         <li class="list__item">
-          <a class="list__link" href="catalog.html">Каталог продукции</a>
+          <a class="list__link list__link--index-page" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="list__item">
-          <a class="list__link" href="form.html">Подбор программы</a>
+          <a class="list__link list__link--index-page" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -37,7 +37,7 @@
       <p class="promo__text">Занялся собой? Займись котом</p>
       <img src="img/index-can-mobile@1x.png" class="promo__img" width="280" height="271" alt="Кэт Энерджи Курица">
       <form class="promo__link" action="form.html" method="get">
-        <button class="promo__button btn btn--green" type="submit">Подобрать программу</button>
+        <button class="promo__btn btn btn--green" type="submit">Подобрать программу</button>
       </form>
     </div>
 
@@ -78,27 +78,31 @@
     <section class="example">
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный
-          результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов
-          в&nbsp;день.
-        </p>
-        <div class="example__wrapper">
-          <div class="example__stat stat-block">
-            <h3 class="stat-block__title">5 кг</h3>
-            <p class="stat-block__text">снижение веса</p>
+        <div class="example__wrapper-adaptive">
+          <div class="example__content">
+            <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный
+              результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит
+              по&nbsp;16&nbsp;часов в&nbsp;день.
+            </p>
+            <div class="example__wrapper">
+              <div class="example__stat stat-block">
+                <h3 class="stat-block__title">5 кг</h3>
+                <p class="stat-block__text">снижение веса</p>
+              </div>
+              <div class="example__stat stat-block">
+                <h3 class="stat-block__title">60 дней</h3>
+                <p class="stat-block__text">затрачено времени</p>
+              </div>
+              <p class="example__total">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;руб.</p>
+            </div>
           </div>
-          <div class="example__stat stat-block">
-            <h3 class="stat-block__title">60 дней</h3>
-            <p class="stat-block__text">затрачено времени</p>
-          </div>
-        </div>
-        <p class="example__total">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;руб.</p>
-        <img src="img/before-mobile@1x.png" class="example__img" width="320" height="240" alt="Живой пример">
-        <div class="slider">
-          <div class="slider__wrapper">
-            <span class="slider__text">Было</span>
-            <div class="slider__scale"></div>
-            <span class="slider__text">Стало</span>
+          <div class="slider">
+            <img src="img/before-mobile@1x.png" class="slider__img slider__img--fat" width="320" height="240" alt="Живой пример">
+            <div class="slider__wrapper">
+              <span class="slider__text">Было</span>
+              <div class="slider__scale"></div>
+              <span class="slider__text">Стало</span>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +112,10 @@
       <div class="container">
         <div class="contacts__address address">
           <h3 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="address__block">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__text">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__minimap minimap">
@@ -120,7 +127,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__link">
-        <svg version="1.1" width="150px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg version="1.1" width="140px" height="90px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
           <style type="text/css">
             .st0 {

@@ -11,7 +11,6 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "4.0.x",
-    "normalize.css": "^8.0.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -37,5 +36,10 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "css-mqpacker": "^6.0.2",
+    "normalize-scss": "^7.0.1",
+    "postcss-custom-media": "^6.0.0"
   }
 }

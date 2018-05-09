@@ -6,13 +6,15 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var customMedia = require("postcss-custom-media");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      customMedia()
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
