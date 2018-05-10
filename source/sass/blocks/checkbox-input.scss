@@ -1,6 +1,27 @@
 .checkbox-input {
+  margin-bottom: 22px;
+
   @media (--tablet-width) {
-    width: 280px;
+    min-width: 287px;
+    margin-bottom: 49px;
+  }
+
+  @media (--desktop-width) {
+    margin-bottom: 0;
+    margin-right: 38px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (--tablet-width) {
+      margin-bottom: 49px;
+    }
+
+    @media (--desktop-width) {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -10,9 +31,33 @@
   line-height: 18px;
   font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
+  padding-left: 46px;
+  position: relative;
 
   @media (--tablet-width) {
+    padding-left: 58px;
     font-size: 20px;
     line-height: 20px;
   }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid var(--input-border-color);
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    @media (--tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+    }
+  }
+}
+
+.checkbox-input__control {
+  display: none;
 }

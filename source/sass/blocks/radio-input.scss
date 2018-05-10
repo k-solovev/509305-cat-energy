@@ -1,3 +1,11 @@
+.radio-input {
+  margin-bottom: 22px;
+
+  @media (--tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .radio-input:last-child {
   margin-bottom: 0;
 }
@@ -8,9 +16,34 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 46px;
+  position: relative;
 
   @media (--tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 87px;
   }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid var(--input-border-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    @media (--tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: 28px;
+    }
+  }
+}
+
+.radio-input__control {
+  display: none;
 }

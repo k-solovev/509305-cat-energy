@@ -1,35 +1,16 @@
 .promo {
-  position: relative;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   @media (--tablet-width) {
-    min-height: 800px;
+    min-height: 813px;
 
     background-image: none;
   }
 
   @media (--desktop-width) {
-    min-height: 700px;
-  }
-
-  &::before {
-    @media (--desktop-width) {
-      content: "";
-      position: absolute;
-      top: -66px;
-      right: 0;
-      z-index: -1;
-
-      width: 720px;
-      height: 700px;
-
-      background-color: var(--green-color);
-      background-image: url("../img/index-background-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    min-height: 632px;
   }
 }
 
@@ -45,7 +26,9 @@
   color: white;
 
   @media (--tablet-width) {
-    width: 427px;
+    padding-top: 26px;
+    padding-left: 87px;
+    width: 505px;
     margin: 0;
     margin-bottom: 40px;
 
@@ -56,7 +39,28 @@
   }
 
   @media (--desktop-width) {
-    margin-left: 80px;
+    padding-left: 80px;
+    padding-top: 98px;
+    margin-bottom: 42px;
+  }
+
+  &::before {
+    @media (--desktop-width) {
+      content: "";
+      position: absolute;
+      top: -149px;
+      right: 0;
+      z-index: -1;
+
+      width: 792px;
+      height: 845px;
+      flex-grow: 1;
+
+      background-color: var(--green-color);
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -74,6 +78,7 @@
   text-transform: uppercase;
 
   @media (--tablet-width) {
+    padding-left: 88px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -81,28 +86,32 @@
   }
 
   @media (--desktop-width) {
-    margin-left: 80px;
+    padding-left: 80px;
   }
 }
 
 .promo__link {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 0;
 
   @media (--tablet-width) {
-    position: absolute;
-    top: 300px;
-    left: 30px;
-
+    padding-left: 89px;
+    padding-top: 22px;
     width: 245px;
     min-height: 53px;
+  }
+
+  @media (--desktop-width) {
+    padding-left: 30px;
+    padding-top: 27px;
   }
 }
 
 .promo__btn {
   @media (--tablet-width) {
-    padding: 15px 12px;
+    width: 245px;
+    padding: 16px 12px;
 
     font-size: 20px;
     line-height: 20px;

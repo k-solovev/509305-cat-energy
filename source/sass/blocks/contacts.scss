@@ -3,6 +3,14 @@
 
   &--grey-bg {
     background-color: var(--bgc-grey);
+
+    @media (--tablet-width) {
+      padding-top: 35px;
+    }
+
+    @media (--desktop-width) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -13,5 +21,22 @@
   @media (--tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 38px;
+  }
+
+  @media (--desktop-width) {
+    position: absolute;
+    top: 94px;
+
+    width: 570px;
+    padding: 49px 75px 37px 75px;
+
+    background-color: white;
+  }
+}
+
+.contacts__minimap {
+  @media (--tablet-width) {
+    min-height: 400px;
   }
 }

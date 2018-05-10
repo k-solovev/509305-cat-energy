@@ -20,6 +20,7 @@
   @media (--tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 4px;
   }
 }
 
@@ -29,7 +30,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 12px 50px 12px 15px;
   width: 100%;
   margin-left: 10px;
   border: 1px solid var(--grey-border-color);
@@ -37,5 +38,8 @@
   @media (--tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
   }
 }
