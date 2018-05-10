@@ -10,19 +10,35 @@
   font-family: var(--set-Oswald-font-family);
   color: white;
   text-transform: uppercase;
+  outline: none;
 
   border: none;
+
+  @media (--tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (--desktop-width) {
+    max-width: 570px;
+  }
 
   &--green {
     background-color: var(--green-color);
   }
 
   &--form {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+
     @media (--tablet-width) {
       width: 283px;
-      height: 54px;
+      height: 52px;
       margin-right: 60px;
-      margin-left: 40px;
+      margin-left: 41px;
+      padding-top: 0;
+      padding-bottom: 0;
 
       font-size: 20px;
       line-height: 20px;
@@ -73,14 +89,5 @@
     &::after {
       bottom: 3px;
     }
-  }
-
-  @media (--tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  @media (--desktop-width) {
-    max-width: 570px;
   }
 }

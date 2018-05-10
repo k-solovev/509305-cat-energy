@@ -1,22 +1,12 @@
 .address {
   display: flex;
   justify-content: space-between;
-
-  @media (--desktop-width) {
-    position: absolute;
-    top: 96px;
-
-    width: 570px;
-    min-height: 200;
-    padding: 70px;
-
-    background-color: white;
-  }
 }
 
 .address__title {
   width: 140px;
   min-height: 65px;
+  margin-top: 17px;
   margin-right: 17px;
 
   font-weight: 400;
@@ -46,8 +36,12 @@
 
   @media (--tablet-width) {
     width: 170px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (--desktop-width) {
+    text-align: left;
   }
 }
