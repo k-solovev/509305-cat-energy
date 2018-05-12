@@ -7,4 +7,8 @@
 
 .offers__block {
   margin-bottom: 20px;
+
+  @media (--tablet-width) {
+    margin-bottom: 30px;
+  }
 }

@@ -1,15 +1,22 @@
+.additional-card {
+  @media (--desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+}
+
 .additional-card__wrapper {
   @media (--tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
 }
 
 .additional-card__title {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   font-weight: 400;
   font-size: 16px;
@@ -22,16 +29,22 @@
   @media (--tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 8px;
   }
 
   @media (--desktop-width) {
+    margin-right: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
     width: 170px;
+    height: 25px;
+    padding-left: 0;
   }
 }
 
 .additional-card__table {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   border-collapse: collapse;
   font-size: 14px;
@@ -39,18 +52,39 @@
   font-family: var(--set-Arial-font-family);
 
   @media (--tablet-width) {
+    margin-right: 6px;
+    margin-top: 16px;
     width: auto;
   }
 
   @media (--desktop-width) {
-    width: 300px;
+    width: 340px;
     margin-left: 50px;
+    margin-right: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 .additional-card__table-cell {
+  &--litr {
+    @media (--tablet-width) {
+      padding-right: 7px;
+    }
+  }
+
+  &--rub {
+    @media (--desktop-width) {
+      padding-right: 10px;
+    }
+  }
+
   &:nth-child(2) {
     text-align: right;
+
+    @media (--desktop-width) {
+      text-align: right;
+    }
   }
 
   @media (--tablet-width) {
@@ -59,14 +93,28 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (--desktop-width) {
+    padding-top: 4px;
+  }
 }
 
 .additional-card__btn {
-  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+
+  @media (--tablet-width) {
+    margin-top: 9px;
+    width: 633px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
 
   @media (--desktop-width) {
+    margin-top: 0;
     width: 245px;
     margin-bottom: 0;
-    margin-left: auto;
   }
 }

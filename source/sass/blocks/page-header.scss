@@ -3,9 +3,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 58px;
+  min-height: 66px;
 
   @media (--tablet-width) {
+    min-height: 115px;
+    justify-content: normal;
     border-bottom: none;
+  }
+}
+
+.page-header__logo {
+  @media (--tablet-width) {
+    margin-right: 68px;
+  }
+
+  @media (--desktop-width) {
+    margin-top: 57px;
+  }
+}
+
+.page-header__nav {
+  @media (--desktop-width) {
+    margin-top: 57px;
+    margin-left: auto;
   }
 }

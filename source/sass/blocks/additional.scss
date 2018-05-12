@@ -2,11 +2,16 @@
   @media (--desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 17px;
   }
 }
 
 .additional__list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media (--tablet-width) {
+    margin-bottom: 69px;
+  }
 
   @media (--desktop-width) {
     width: 895px;
@@ -16,11 +21,9 @@
 .additional__promo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   min-height: 289px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   background-color: var(--green-color);
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -29,15 +32,16 @@
 
   @media (--tablet-width) {
     flex-direction: row;
-    height: 200px;
+    min-height: 200px;
+    margin-bottom: 76px;
 
-    background-position: 0 -290px;
+    background-position: 0 -357px;
   }
 
   @media (--desktop-width) {
     flex-direction: column;
     width: 245px;
-    min-height: 290px;
+    height: 289px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -47,8 +51,8 @@
   position: relative;
 
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-bottom: 33px;
 
   font-weight: 400;
   font-size: 24px;
@@ -57,27 +61,41 @@
 
   border-bottom: 1px solid var(--grey-color-stat);
 
+  @media (--tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 37px;
+    margin-bottom: 47px;
+
+    border-bottom: none;
+  }
+
+  @media (--desktop-width) {
+    padding-left: 0;
+  }
+
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 55px;
+    top: 42px;
     right: -20px;
 
-    width: 60px;
+    width: 53px;
     height: 3px;
 
     background-color: var(--green-color);
 
     @media (--tablet-width) {
-      top: 60px;
+      top: 50px;
       right: -30px;
 
       width: 330px;
     }
 
     @media (--desktop-width) {
-      width: 800px;
+      width: 957px;
+      right: -110px;
     }
   }
 
@@ -86,18 +104,14 @@
 
     @media (--tablet-width) {
       content: "";
-      right: 0;
       left: -30px;
-
       width: 30px;
     }
-  }
 
-  @media (--tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-
-    border-bottom: none;
+    @media (--desktop-width) {
+      left: -109px;
+      width: 69px;
+    }
   }
 }
 
@@ -116,7 +130,7 @@
   }
 
   @media (--desktop-width) {
-    padding: 11px 0;
+    padding: 0;
 
     border-right: none;
     border-left: none;
@@ -131,9 +145,39 @@
   font-family: var(--set-Arial-font-family);
   text-align: center;
   color: white;
+
+  @media (--tablet-width) {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  @media (--desktop-width) {
+    text-align: center;
+  }
 }
 
 .additional__icon-block {
-  width: 62px;
-  height: 63px;
+  width: 60px;
+  height: 60px;
+  margin-top: 64px;
+  margin-bottom: 47px;
+
+  @media (--tablet-width) {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 88px;
+    margin-right: 276px;
+  }
+
+  @media (--desktop-width) {
+    margin-top: 65px;
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.additional__icon {
+  width: 60px;
+  height: 60px;
 }
