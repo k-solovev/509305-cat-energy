@@ -8,6 +8,15 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 13px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid var(--grey-input-hover);
+  }
+
+  &:focus {
+    border: 1px solid var(--grey-color-font);
+  }
 
   @media (--tablet-width) {
     min-height: 175px;

@@ -44,6 +44,15 @@
   padding: 12px 15px;
   width: 100%;
   border: 1px solid var(--grey-border-color);
+  outline: none;
+
+  &:hover {
+    border: 1px solid var(--grey-input-hover);
+  }
+
+  &:focus {
+    border: 1px solid var(--grey-color-font);
+  }
 
   @media (--tablet-width) {
     font-size: 20px;

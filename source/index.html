@@ -11,13 +11,17 @@
 <body class="index-page">
   <header class="page-header container">
     <div class="page-header__logo logo">
-      <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/logo-mobile.svg" class="logo__img" width="200" height="45" alt="Логотип Кэт Энерджи">
+      <a class="logo__link">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" class="logo__img" alt="Логотип Кэт Энерджи">
+        </picture>
       </a>
     </div>
     <nav class="page-header__nav main-nav">
-      <button class="btn btn--toggle" type="button"></button>
-      <ul class="main-nav__list list list--hidden">
+      <button class="btn btn--toggle btn--close" type="button"></button>
+      <ul class="main-nav__list main-nav--close list">
         <li class="list__item">
           <a class="list__link list__link--active list__link--index-page">Главная</a>
         </li>
@@ -35,10 +39,13 @@
     <div class="promo container">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" class="promo__img" width="280" height="271" alt="Кэт Энерджи Курица">
-      <form class="promo__link" action="form.html" method="get">
-        <button class="promo__btn btn btn--green" type="submit">Подобрать программу</button>
-      </form>
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" class="promo__img"
+          alt="Кэт Энерджи Курица">
+      </picture>
+      <a class="promo__btn btn btn--green" href="form.html">Подобрать программу</a>
     </div>
 
     <section class="offers container">
@@ -109,8 +116,18 @@
             </div>
           </div>
           <div class="slider">
-            <img src="img/before-mobile@1x.png" class="slider__img slider__img--fat" width="320" height="240" alt="Жирный котик">
-            <img src="img/after-mobile@1x.png" class="slider__img slider__img--slim" width="320" height="240" alt="Стройный котик">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" class="slider__img slider__img--fat"
+                alt="Жирный котик">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" class="slider__img slider__img--slim"
+                alt="Стройный котик">
+            </picture>
             <div class="slider__wrapper">
               <span class="slider__text">Было</span>
               <div class="slider__scale"></div>
@@ -132,7 +149,13 @@
         </div>
       </div>
       <div class="contacts__minimap minimap">
-        <img src="img/bg-map-mobile@1x.png" class="minimap__img" width="320" height="400" alt="Мини-карта">
+        <iframe class="minimap__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523013394251"
+          style="border:0" allowfullscreen></iframe>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" class="minimap__img" alt="Мини-карта">
+        </picture>
       </div>
     </section>
   </main>
@@ -240,6 +263,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

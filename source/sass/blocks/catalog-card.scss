@@ -65,12 +65,24 @@
 
   @media (--tablet-width) {
     display: block;
+    position: relative;
+    padding-top: 74px;
   }
 }
 
 .catalog-card__img {
   @media (--tablet-width) {
-    transform: translateX(25%);
+    position: absolute;
+    top: -66px;
+    left: -20px;
+  }
+
+  &--big {
+    @media (--tablet-width) {
+      position: absolute;
+      top: -102px;
+      left: -20px;
+    }
   }
 }
 
@@ -218,6 +230,11 @@
 
 .catalog-card__btn {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 20px;
