@@ -35,8 +35,20 @@
   line-height: 18px;
   font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
-
+  outline: none;
   border: 1px solid var(--grey-border-color);
+
+  &:invalid {
+    border: 1px solid red;
+  }
+
+  &:hover {
+    border: 1px solid var(--grey-input-hover);
+  }
+
+  &:focus {
+    border: 1px solid var(--grey-color-font);
+  }
 
   @media (--tablet-width) {
     font-size: 20px;

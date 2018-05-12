@@ -25,6 +25,14 @@
     padding-left: 87px;
   }
 
+  &:hover ~ .radio-input__label::before {
+    border: 1px solid var (--input-border-hvr);
+  }
+
+  &:active ~ .radio-input__label::before {
+    border: 1px solid var(--input-border-active);
+  }
+
   &::before {
     content: "";
     width: 30px;

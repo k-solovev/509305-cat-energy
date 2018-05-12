@@ -1,15 +1,23 @@
 :root {
   --green-color: #68b738;
+  --green-btn-hvr: #5eaa2f;
+  --green-btn-active: #8fc46e;
   --bgc-grey: #f2f2f2;
+  --bgc-grey-hover: #ebebeb;
+  --grey-btn-active: #b9b9b9;
   --grey-color-link: #666666;
   --grey-border-color: #ededed;
+  --grey-input-hover: #cfcfcf;
   --footer-border-color: #d9d9d9;
   --grey-color-stat: #cdcdcd;
   --color-border-nav: #e6e6e6;
   --color-plus-icon: #d3d3d3;
   --grey-color-font: #444444;
   --slider-dash-border: #bebebe;
+  --slider-solid-border: #989898;
   --input-border-color: #cecece;
+  --input-border-hvr: #bfbfbf;
+  --input-border-active: #eaeaea;
   --slider-scale-bar: #dcdcdc;
 
   --set-Oswald-font-family: "Oswald", "Arial", sans-serif;
@@ -17,4 +25,5 @@
 
   @custom-media --tablet-width (min-width: 768px);
   @custom-media --desktop-width (min-width: 1300px);
+  @custom-media --retina (min-resolution: 144dpi, 1.5dppx);
 }

@@ -25,6 +25,14 @@
 
   &--green {
     background-color: var(--green-color);
+
+    &:hover {
+      background-color: var(--green-btn-hvr);
+    }
+
+    &:active {
+      color: var(--green-btn-active);
+    }
   }
 
   &--form {
@@ -55,6 +63,14 @@
     color: var(--grey-color-font);
 
     background-color: var(--bgc-grey);
+
+    &:hover {
+      background-color: var(--bgc-grey-hover);
+    }
+
+    &:active {
+      color: var(--grey-btn-active);
+    }
   }
 
   &--toggle {
@@ -62,32 +78,23 @@
 
     width: 25px;
     min-height: 21px;
+    background-color: white;
 
-    background-color: black;
     border: none;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 20px;
+      background-image: url("../img/icon-mobile-menu.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 2px;
+      left: 1px;
+    }
 
     @media (--tablet-width) {
       display: none;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-
-      width: 100%;
-      height: 6px;
-
-      background-color: white;
-    }
-
-    &::before {
-      top: 3px;
-    }
-
-    &::after {
-      bottom: 3px;
     }
   }
 }

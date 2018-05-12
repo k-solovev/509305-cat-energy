@@ -35,7 +35,12 @@
     <div class="promo container">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" class="promo__img" width="280" height="271" alt="Кэт Энерджи Курица">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" class="promo__img"
+          alt="Кэт Энерджи Курица">
+      </picture>
       <form class="promo__link" action="form.html" method="get">
         <button class="promo__btn btn btn--green" type="submit">Подобрать программу</button>
       </form>
@@ -109,8 +114,18 @@
             </div>
           </div>
           <div class="slider">
-            <img src="img/before-mobile@1x.png" class="slider__img slider__img--fat" width="320" height="240" alt="Жирный котик">
-            <img src="img/after-mobile@1x.png" class="slider__img slider__img--slim" width="320" height="240" alt="Стройный котик">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" class="slider__img slider__img--fat"
+                alt="Жирный котик">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" class="slider__img slider__img--slim"
+                alt="Стройный котик">
+            </picture>
             <div class="slider__wrapper">
               <span class="slider__text">Было</span>
               <div class="slider__scale"></div>
@@ -132,7 +147,11 @@
         </div>
       </div>
       <div class="contacts__minimap minimap">
-        <img src="img/bg-map-mobile@1x.png" class="minimap__img" width="320" height="400" alt="Мини-карта">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
+          <img src="img/bg-map-mobile@1x.png" class="minimap__img" alt="Мини-карта">
+        </picture>
       </div>
     </section>
   </main>
