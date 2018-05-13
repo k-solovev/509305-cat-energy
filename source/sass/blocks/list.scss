@@ -1,3 +1,9 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .list__item {
   position: relative;
 
@@ -33,6 +39,14 @@
   font-family: var(--set-Oswald-font-family);
   color: black;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--index-page {
     @media (--desktop-width) {
