@@ -1,12 +1,14 @@
 .page-header {
   border-bottom: 1px solid var(--grey-border-color);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: 66px;
 
   @media (--tablet-width) {
     min-height: 115px;
+    flex-direction: row;
     justify-content: normal;
     border-bottom: none;
   }
@@ -23,8 +25,14 @@
 }
 
 .page-header__nav {
+  width: 100%;
+
   @media (--desktop-width) {
     margin-top: 57px;
     margin-left: auto;
+  }
+
+  @media (--desktop-width) {
+    width: 570px;
   }
 }
