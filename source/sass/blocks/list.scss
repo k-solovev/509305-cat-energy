@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (--tablet-width) {
+    display: flex;
+    padding-right: 30px;
+  }
 }
 
 .list__item {
@@ -24,10 +29,6 @@
 
 .list--hidden {
   display: none;
-
-  @media (--tablet-width) {
-    display: flex;
-  }
 }
 
 .list__link {
@@ -39,6 +40,8 @@
   font-family: var(--set-Oswald-font-family);
   color: black;
   text-transform: uppercase;
+  text-align: center;
+  padding: 23px 0;
 
   &:hover {
     opacity: 0.6;
