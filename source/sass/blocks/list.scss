@@ -1,11 +1,15 @@
 .list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 
   @media (--tablet-width) {
     display: flex;
-    padding-right: 30px;
+  }
+
+  @media (--desktop-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -14,7 +18,21 @@
 
   min-height: 66px;
 
-  border-top: 1px solid var(--color-border-nav);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: var(--color-border-nav);
+
+    @media (--tablet-width) {
+      content: none;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -33,11 +51,13 @@
 
 .list__link {
   display: block;
+  padding: 23px 0;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   font-family: var(--set-Oswald-font-family);
+  text-align: center;
   color: black;
   text-transform: uppercase;
   text-align: center;
