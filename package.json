@@ -2,7 +2,7 @@
   "name": "cat-energy",
   "version": "14.0.0",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Личный проект «Кэт энерджи» от HTML Academy"https://travis-ci.org/profile/NikolaySolodukhin,
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
@@ -19,6 +19,7 @@
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
+    "postcss-custom-properties": "^7.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",

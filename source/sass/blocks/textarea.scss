@@ -10,10 +10,6 @@
   padding: 13px;
   outline: none;
 
-  &:invalid {
-    border: 1px solid red;
-  }
-
   &:hover {
     border: 1px solid var(--grey-input-hover);
   }

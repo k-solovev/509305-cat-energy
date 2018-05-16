@@ -36,10 +36,6 @@
   outline: none;
   border: 1px solid var(--grey-border-color);
 
-  &:invalid {
-    border: 1px solid red;
-  }
-
   &:hover {
     border: 1px solid var(--grey-input-hover);
   }

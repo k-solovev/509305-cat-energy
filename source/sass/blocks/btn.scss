@@ -73,25 +73,33 @@
     }
   }
 
-  &--toggle {
-    position: relative;
+  &--close {
+    position: absolute;
+    top: -45px;
+    right: 0;
 
     width: 25px;
     min-height: 21px;
     background-color: white;
+    background-image: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
 
     border: none;
 
-    &::before {
-      content: "";
-      width: 24px;
-      height: 20px;
-      background-image: url("../img/icon-mobile-menu.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 2px;
-      left: 1px;
+    @media (--tablet-width) {
+      display: none;
     }
+  }
+  
+  &--open {
+    background-color: white;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    min-height: 21px;
+    position: absolute;
+    top: -45px;
+    right: 0;
 
     @media (--tablet-width) {
       display: none;
