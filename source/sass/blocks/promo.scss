@@ -10,6 +10,11 @@
     background-size: 320px auto;
   }
 
+  @media (--retina) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
+
   @media (--tablet-width) {
     min-height: 810px;
 
@@ -113,7 +118,6 @@
 
   @media (--tablet-width) {
     padding-left: 88px;
-
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -140,7 +144,6 @@
     position: absolute;
     top: 369px;
     left: 119px;
-
     width: 245px;
     padding: 16px 12px;
 

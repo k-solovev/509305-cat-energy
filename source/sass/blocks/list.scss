@@ -57,9 +57,20 @@
   font-size: 20px;
   line-height: 20px;
   font-family: var(--set-Oswald-font-family);
+  text-align: center;
   color: black;
   text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  padding: 23px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &:hover {
     opacity: 0.6;

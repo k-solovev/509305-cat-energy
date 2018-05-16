@@ -20,12 +20,19 @@
   line-height: 18px;
   font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
+  padding-left: 46px;
+  position: relative;
 
   @media (--tablet-width) {
     padding-left: 87px;
 
     font-size: 20px;
     line-height: 20px;
+    padding-left: 87px;
+  }
+
+  &:hover ~ .radio-input__label::before {
+    border: 1px solid var (--input-border-hvr);
   }
 
   @media (--desktop-width) {

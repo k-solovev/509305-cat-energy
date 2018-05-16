@@ -23,11 +23,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 75px;
-
-  @media (--tablet-width) {
-
-  }
-
+  
   @media (--desktop-width) {
     padding-top: 8px;
   }
