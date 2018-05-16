@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @media (--desktop-width) {
     width: 570px;
@@ -41,7 +42,19 @@
   }
 
   &:focus {
-    border: 1px solid var(--grey-color-font);
+    border: 2px solid var(--grey-color-font);
+  }
+
+  &:focus ~ .tel-input__icon {
+    fill: var(--green-color);
+  }
+
+  &:invalid {
+    border: 2px solid red;
+  }
+
+  &:invalid ~ .tel-input__icon {
+    fill: red;
   }
 
   @media (--tablet-width) {
@@ -50,5 +63,16 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+  }
+}
+
+.tel-input__icon {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  @media (--tablet-width) {
+    top: 15px;
+    right: 16px;
   }
 }

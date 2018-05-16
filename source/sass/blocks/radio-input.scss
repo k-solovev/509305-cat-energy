@@ -11,10 +11,6 @@
 }
 
 .radio-input__label {
-  position: relative;
-
-  padding-left: 46px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -28,23 +24,19 @@
 
     font-size: 20px;
     line-height: 20px;
-    padding-left: 87px;
-  }
-
-  &:hover ~ .radio-input__label::before {
-    border: 1px solid var (--input-border-hvr);
   }
 
   @media (--desktop-width) {
     cursor: pointer;
   }
 
-  &:hover ~ .radio-input__label::before {
+  &:hover::before {
     border: 1px solid var (--input-border-hvr);
   }
 
-  &:active ~ .radio-input__label::before {
-    border: 1px solid var(--input-border-active);
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
   }
 
   &::before {

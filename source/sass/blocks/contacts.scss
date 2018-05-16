@@ -27,6 +27,7 @@
   @media (--desktop-width) {
     position: absolute;
     top: 94px;
+    z-index: 1;
 
     width: 570px;
     padding: 49px 75px 37px 75px;

@@ -21,6 +21,18 @@
   width: 55px;
   height: 62px;
 
+  &--vk svg:hover,
+  &--inst svg:hover,
+  &--fb svg:hover {
+    fill: var(--green-color);
+  }
+
+  &--vk svg:active,
+  &--inst svg:active,
+  &--fb svg:active {
+    opacity: 0.3;
+  }
+
   @media (--tablet-width) {
     width: 52px;
   }
@@ -59,5 +71,19 @@
   @media (--tablet-width) {
     width: 14px;
     height: 29px;
+  }
+}
+
+.page-footer__icon {
+  fill: var(--grey-color-link);
+}
+
+.page-footer__logo {
+  & svg:hover {
+    fill: var(--green-color);
+  }
+
+  & svg:active {
+    opacity: 0.3;
   }
 }

@@ -220,26 +220,27 @@
     content: "";
     width: 20px;
     height: 13px;
-    background-image: url(../img/icon-right-arrow-long.svg);
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 27px;
+    top: 23px;
     left: 97px;
 
     @media (--tablet-width) {
-      top: 7px;
+      top: 4px;
       left: 131px;
     }
   }
 
-  &:hover:before {
+  &:hover::before {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     width: 35px;
     height: 16px;
     top: 5px;
   }
 
-  &:active:before {
+  &:active,
+  &:active::before {
     opacity: 0.3;
   }
 

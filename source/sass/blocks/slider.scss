@@ -1,16 +1,18 @@
 .slider {
   @media (--tablet-width) {
     position: relative;
+
     min-height: 463px;
+
     background-color: var(--bgc-grey);
   }
 }
 
 .slider__wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-bottom: 30px;
 
   @media (--tablet-width) {
@@ -23,15 +25,17 @@
 }
 
 .slider__text {
-  font-family: var(--set-Oswald-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
 
   @media (--tablet-width) {
-    font-size: 20px;
     padding-bottom: 5px;
+
+    font-size: 20px;
+
     border-bottom: 1px dashed var(--slider-dash-border);
 
     &:hover {
@@ -57,8 +61,8 @@
   }
 
   &--fat {
-    margin-bottom: 29px;
     margin-right: -20px;
+    margin-bottom: 29px;
     margin-left: -20px;
   }
 
@@ -68,20 +72,60 @@
 }
 
 .slider__scale {
+  position: relative;
+
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 18px;
   width: 80px;
   height: 13px;
+  margin: 0 18px;
+
+  vertical-align: middle;
+
   background-color: white;
   border: 1px solid var(--grey-color-stat);
   border-radius: 5px;
 
   @media (--tablet-width) {
     width: 430px;
-    margin: 0 20px;
     height: 6px;
-    border: none;
+    margin: 0 20px;
+
     background-color: var(--slider-scale-bar);
+    border: none;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: 50%;
+
+      width: 30px;
+      height: 30px;
+
+      background-color: white;
+      border: 1px solid var(--grey-color-stat);
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--green-color);
+      position: absolute;
+      top: -2px;
+      left: 52.5%;
+    }
+  }
+
+  &:hover::before {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active::before {
+    border: 1px solid (--green-color);
   }
 }

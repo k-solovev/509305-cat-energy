@@ -35,8 +35,15 @@
   line-height: 18px;
   font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
-  padding-left: 46px;
-  position: relative;
+
+  &:hover::before {
+    border: 1px solid var(--greey-chkbx-hvr);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
 
   @media (--tablet-width) {
     padding-left: 58px;

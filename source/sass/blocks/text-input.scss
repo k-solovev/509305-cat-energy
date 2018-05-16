@@ -54,6 +54,10 @@
     border: 1px solid var(--grey-color-font);
   }
 
+  &:invalid {
+    border: 1px solid red;
+  }
+
   @media (--tablet-width) {
     font-size: 20px;
     line-height: 20px;
