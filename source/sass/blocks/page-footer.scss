@@ -7,6 +7,7 @@
 
   @media (--tablet-width) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-top: 23px;
     padding-bottom: 24px;
@@ -24,7 +25,7 @@
   min-height: 75px;
 
   @media (--tablet-width) {
-    margin-left: auto;
+
   }
 
   @media (--desktop-width) {
@@ -41,11 +42,6 @@
 
   @media (--tablet-width) {
     border-bottom: none;
-    margin-right: 138px;
-  }
-
-  @media (--desktop-width) {
-    margin-right: 393px;
   }
 
   &--name {
@@ -57,13 +53,24 @@
     line-height: 16px;
 
     @media (--tablet-width) {
-      margin-right: 21px;
+      margin-right: 17px;
+      margin-top: 4px;
     }
   }
 }
 
 .page-footer__social {
-  @media (--desktop-width) {
-    margin-right: 372px;
+  @media (--tablet-width) {
+    margin-left: 25px;
   }
+}
+
+.page-footer__logo {
+  width: 35px;
+}
+
+.page-footer__icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
 }

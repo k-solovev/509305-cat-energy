@@ -17,15 +17,15 @@
   }
 
   @media (--desktop-width) {
-    min-height: 627px;
+    min-height: 650px;
 
     &::after {
       content: "";
-      width: 643px;
+      width: 720px;
       height: 697px;
       position: absolute;
       display: block;
-      background-color: #64a83c;
+      background-color: var(--green-color);
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: top right;
       background-size: 720px auto;
@@ -164,6 +164,6 @@
 
   @media (--desktop-width) {
     top: 142px;
-    left: 632px;
+    left: 560px;
   }
 }

@@ -16,7 +16,7 @@ menuBtn.addEventListener("click", function (evt) {
     mobileMenu.classList.add('main-nav--close');
     mobileMenu.classList.remove('main-nav--open');
 
-    if (mobilMenu.classList.contains('btn-open')) {
+    if (menuBtn.classList.contains('btn--open')) {
       menuBtn.classList.remove('btn--open');
       menuBtn.classList.add('btn--close');
     }

@@ -23,11 +23,19 @@
 
   @media (--tablet-width) {
     margin-right: 68px;
-    padding-left: 30px;
   }
 
   @media (--desktop-width) {
     margin-top: 52px;
+    padding-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -43,6 +51,5 @@
   @media (--desktop-width) {
     width: 570px;
     margin-top: 57px;
-    margin-left: auto;
   }
 }

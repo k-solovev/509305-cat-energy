@@ -219,30 +219,28 @@
   &::before {
     content: "";
     width: 20px;
-    height: 3px;
-    background-color: var(--grey-color-link);
+    height: 13px;
+    background-image: url(../img/icon-right-arrow-long.svg);
+    background-repeat: no-repeat;
     position: absolute;
     top: 27px;
     left: 97px;
 
     @media (--tablet-width) {
-      top: 9px;
+      top: 7px;
       left: 131px;
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    left: 114px;
-    border: 6px solid var(--bgc-grey);
-    border-left-color: var(--grey-color-link);
+  &:hover:before {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 35px;
+    height: 16px;
+    top: 5px;
+  }
 
-    @media (--tablet-width) {
-      top: 4px;
-      left: 148px;
-    }
+  &:active:before {
+    opacity: 0.3;
   }
 
   @media (--tablet-width) {
