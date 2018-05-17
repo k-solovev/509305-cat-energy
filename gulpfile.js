@@ -103,6 +103,6 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
-     done
+      done
     );
 });
