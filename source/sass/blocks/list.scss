@@ -18,6 +18,12 @@
 
   min-height: 66px;
 
+  &--index-page .list__link--active {
+    @media (--desktop-width) {
+      border-bottom: 2px solid white;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
