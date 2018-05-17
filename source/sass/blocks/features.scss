@@ -1,15 +1,17 @@
 .features__title {
+  margin-bottom: 38px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   font-family: var(--set-Oswald-font-family);
-  margin-bottom: 38px;
 
   @media (--tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     margin-top: 45px;
     margin-bottom: 39px;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (--desktop-width) {
@@ -18,11 +20,13 @@
 }
 
 .features__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   position: relative;
+
+  margin: 0;
+  padding: 0;
   padding-bottom: 25px;
+
+  list-style: none;
 
   &::after {
     @media (--tablet-width) {
@@ -43,10 +47,10 @@
   }
 
   @media (--tablet-width) {
-    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 0;
   }
 
   @media (--desktop-width) {
@@ -85,9 +89,10 @@
       background-position: 6px 5px;
 
       @media (--tablet-width) {
+        top: 32px;
+
         width: 80px;
         height: 80px;
-        top: 32px;
 
         background-position: 16px 15px;
       }
@@ -96,16 +101,55 @@
     @media (--tablet-width) {
       width: 325px;
       min-height: 230px;
+      margin-bottom: 87px;
       padding-top: 143px;
       padding-left: 0;
-      margin-bottom: 87px;
 
       font-size: 16px;
       line-height: 24px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 116px;
+        top: 120px;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        font-size: 280px;
+        font-family: var(--set-Oswald-font-family);
+        color: var(--bgc-grey);
+      }
     }
 
     @media (--desktop-width) {
       width: 245px;
+    }
+  }
+
+  &--leaf::after {
+    @media (--tablet-width) {
+      content: "1";
+    }
+  }
+
+  &--powder::after {
+    @media (--tablet-width) {
+      content: "2";
+    }
+  }
+
+  &--dining::after {
+    @media (--tablet-width) {
+      content: "3";
+    }
+  }
+
+  &--clock::after {
+    @media (--tablet-width) {
+      content: "4";
     }
   }
 
