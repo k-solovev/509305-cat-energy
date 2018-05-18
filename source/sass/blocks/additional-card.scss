@@ -106,15 +106,13 @@
 
   @media (--tablet-width) {
     margin-top: 9px;
-    width: 633px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 7px;
+    margin-right: 7px;
     margin-bottom: 17px;
   }
 
   @media (--desktop-width) {
-    margin-top: 0;
+    margin: 0;
     width: 245px;
-    margin-bottom: 0;
   }
 }

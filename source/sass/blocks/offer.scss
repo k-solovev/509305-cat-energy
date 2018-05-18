@@ -100,8 +100,8 @@
 
     @media (--tablet-width) {
       padding-top: 76px;
-      padding-left: 0;
       padding-bottom: 26px;
+      padding-left: 0;
 
       font-size: 36px;
       text-align: left;
@@ -203,6 +203,8 @@
 }
 
 .offer__link {
+  position: relative;
+
   display: inline-block;
   width: 100%;
   padding: 20px 0;
@@ -214,17 +216,18 @@
   vertical-align: middle;
   color: black;
   text-transform: uppercase;
-  position: relative;
 
   &::before {
     content: "";
-    width: 20px;
-    height: 13px;
+    position: absolute;
+    top: 22px;
+    left: 97px;
+
+    width: 24px;
+    height: 14px;
+
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top: 23px;
-    left: 97px;
 
     @media (--tablet-width) {
       top: 4px;
@@ -233,10 +236,12 @@
   }
 
   &:hover::before {
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    top: 5px;
+
     width: 35px;
     height: 16px;
-    top: 5px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active,

@@ -97,11 +97,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: -13px;
-      left: 50%;
+      top: -15px;
+      left: 47%;
 
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
 
       background-color: white;
       border: 1px solid var(--grey-color-stat);
@@ -117,7 +117,7 @@
       background-color: var(--green-color);
       position: absolute;
       top: -2px;
-      left: 52.5%;
+      left: 50%;
     }
   }
 
