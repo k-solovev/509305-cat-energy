@@ -1,10 +1,11 @@
 .tel-input {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   min-height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
 
   @media (--desktop-width) {
     width: 570px;
@@ -12,30 +13,33 @@
 }
 
 .tel-input__label {
-  font-family: var(--set-Oswald-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
 
   @media (--tablet-width) {
+    margin-right: 4px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-right: 4px;
   }
 }
 
 .tel-input__control {
-  font-family: var(--set-Oswald-font-family);
+  width: 100%;
+  margin-left: 10px;
+  padding: 12px 50px 12px 15px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: var(--set-Oswald-font-family);
   text-transform: uppercase;
-  padding: 12px 50px 12px 15px;
-  width: 100%;
-  margin-left: 10px;
-  outline: none;
+
   border: 1px solid var(--grey-border-color);
+  outline: none;
 
   &:hover {
     border: 1px solid var(--grey-input-hover);
@@ -43,6 +47,11 @@
 
   &:focus {
     border: 2px solid var(--grey-color-font);
+    padding: 11px 49px 11px 14px;
+
+    @media (--desktop-width) {
+      padding: 9px 49px 9px 19px;
+    }
   }
 
   &:focus ~ .tel-input__icon {
@@ -58,11 +67,12 @@
   }
 
   @media (--tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

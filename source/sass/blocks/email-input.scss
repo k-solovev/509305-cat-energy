@@ -46,6 +46,11 @@
 
   &:focus {
     border: 2px solid var(--grey-color-font);
+    padding: 11px 49px 11px 14px;
+
+    @media (--desktop-width) {
+      padding: 9px 49px 9px 19px;
+    }
   }
 
   &:focus ~ .email-input__icon {

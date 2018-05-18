@@ -247,6 +247,9 @@
 .form__legend {
   margin-bottom: 3px;
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
 
   font-weight: 400;
   font-size: 24px;
@@ -254,6 +257,21 @@
   font-family: var(--set-Oswald-font-family);
 
   background-color: white;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 3px;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    z-index: -1;
+
+    @media (--tablet-width) {
+      top: 19px;
+    }
+  }
 
   @media (--tablet-width) {
     width: auto;

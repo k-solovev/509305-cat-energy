@@ -28,14 +28,27 @@ gulp.task("style", function() {
       customMedia(),
       postCSSCustomProperties()
     ]))
-    // .pipe(gulp.dest("build/css"))
-    // .pipe(minify())
-    // .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("style:dev", function() {
+  gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+      customMedia(),
+      postCSSCustomProperties()
+    ]))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["style:dev"], function() {
   server.init({
     server: "source/",
     notify: false,
@@ -44,7 +57,7 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style:dev"]);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
