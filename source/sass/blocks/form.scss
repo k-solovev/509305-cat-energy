@@ -1,5 +1,6 @@
 .form {
   padding-bottom: 31px;
+  overflow-x: hidden;
 
   @media (--tablet-width) {
     padding-bottom: 50px;
@@ -47,6 +48,7 @@
 .form__title {
   margin-top: 15px;
   margin-bottom: 25px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -55,6 +57,7 @@
   @media (--tablet-width) {
     margin-top: 25px;
     margin-bottom: 55px;
+
     font-size: 60px;
   }
 
@@ -75,9 +78,10 @@
 
   @media (--tablet-width) {
     width: 330px;
-    margin-left: 40px;
     margin-top: 0;
     margin-bottom: 66px;
+    margin-left: 40px;
+
     font-size: 20px;
     line-height: 30px;
   }
@@ -97,10 +101,11 @@
     text-transform: none;
 
     @media (--tablet-width) {
-      margin-top: 17px;
       width: auto;
-      font-size: 16px;
+      margin-top: 17px;
       margin-left: 0;
+
+      font-size: 16px;
     }
 
     @media (--desktop-width) {
@@ -114,46 +119,49 @@
 }
 
 .form__fieldset {
-  margin-left: 0;
   margin-right: 0;
-  padding-right: 0;
-  padding-left: 0;
   margin-bottom: 24px;
+  margin-left: 0;
   padding-top: 30px;
+  padding-right: 0;
   padding-bottom: 20px;
+  padding-left: 0;
 
   border: none;
 
   @media (--tablet-width) {
     margin-right: 37px;
-    margin-left: 40px;
     margin-bottom: 72px;
-    padding-left: 0;
+    margin-left: 40px;
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (--desktop-width) {
     min-height: 196px;
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 
   &--grey-border {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 28px;
-    margin-bottom: 34px;
     position: relative;
+
+    margin-bottom: 34px;
+    padding-top: 28px;
+    padding-right: 0;
+    padding-left: 0;
 
     &::before,
     &::after {
       content: "";
-      width: 100vw;
-      height: 1px;
-      background-color: var(--grey-border-color);
       position: absolute;
       top: 0;
       left: -20px;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: var(--grey-border-color);
 
       @media (--tablet-width) {
         content: none;
@@ -165,14 +173,14 @@
     }
 
     @media (--tablet-width) {
+      width: 100%;
       margin-right: 37px;
+      margin-bottom: 75px;
       margin-left: 40px;
       padding-top: 34px;
       padding-bottom: 31px;
-      margin-bottom: 75px;
 
       border: 1px solid var(--grey-border-color);
-      width: 100%;
     }
 
     @media (--desktop-width) {
@@ -180,8 +188,8 @@
       min-height: 198px;
       margin-top: 4px;
       margin-right: 0;
-      margin-left: 0;
       margin-bottom: 0;
+      margin-left: 0;
     }
   }
 
@@ -194,15 +202,16 @@
     }
 
     @media (--desktop-width) {
+      margin-bottom: 35px;
       padding-top: 0;
       padding-bottom: 0;
-      margin-bottom: 35px;
     }
   }
 
   &--text {
-    padding: 0;
     width: 100%;
+    padding: 0;
+
     border: none;
 
     @media (--desktop-width) {
@@ -225,8 +234,8 @@
     margin-bottom: 19px;
 
     @media (--tablet-width) {
-      padding-bottom: 0;
       margin-bottom: 12px;
+      padding-bottom: 0;
     }
 
     @media (--desktop-width) {
@@ -245,11 +254,12 @@
 }
 
 .form__legend {
-  margin-bottom: 3px;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  margin-bottom: 3px;
   margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   font-weight: 400;
   font-size: 24px;
@@ -260,31 +270,37 @@
 
   &::before {
     content: "";
-    width: 100vw;
-    height: 3px;
-    background-color: var(--green-color);
     position: absolute;
     top: 14px;
-    left: -20px;
+    left: 0;
     z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: var(--green-color);
 
     @media (--tablet-width) {
       top: 19px;
+      left: -50px;
     }
   }
 
   @media (--tablet-width) {
     width: auto;
+    margin-bottom: 46px;
     padding: 0;
-    padding-left: 20px;
     padding-right: 40px;
+    padding-left: 20px;
+
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 46px;
   }
 
   @media (--desktop-width) {
     margin-bottom: 76px;
+    margin-left: -40px;
+    padding-left: 40px;
   }
 
   &--textarea {
